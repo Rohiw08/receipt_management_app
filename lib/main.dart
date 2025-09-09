@@ -1,19 +1,19 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:routemaster/routemaster.dart';
 
-import 'package:garage/core/common/error_text.dart';
-import 'package:garage/core/common/loading.dart';
-import 'package:garage/core/enums/enums.dart';
-import 'package:garage/features/auth/controller/auth_controller.dart';
-import 'package:garage/firebase_options.dart';
-import 'package:garage/l10n/l10n.dart';
-import 'package:garage/models/user_model.dart';
-import 'package:garage/router.dart';
-import 'package:garage/theme/theme.dart';
+import 'package:receipt_creator/core/common/error_text.dart';
+import 'package:receipt_creator/core/common/loading.dart';
+import 'package:receipt_creator/core/enums/enums.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/firebase_options.dart';
+import 'package:receipt_creator/l10n/l10n.dart';
+import 'package:receipt_creator/models/user_model.dart';
+import 'package:receipt_creator/router.dart';
+import 'package:receipt_creator/theme/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,10 +36,11 @@ class MyApp extends ConsumerStatefulWidget {
 
 class _MyAppState extends ConsumerState<MyApp> {
   UserModel? userModel;
+  String? _lastUid;
 
   void getData(String uid, WidgetRef ref) async {
     userModel =
-        await ref.watch(authControllerProvider.notifier).getUserData(uid).first;
+        await ref.read(authControllerProvider.notifier).getUserData(uid).first;
     ref.read(userProvider.notifier).update((state) => userModel);
     setState(() {});
   }
@@ -62,10 +63,16 @@ class _MyAppState extends ConsumerState<MyApp> {
               debugShowCheckedModeBanner: false,
               routerDelegate: RoutemasterDelegate(routesBuilder: (context) {
                 if (data != null) {
-                  getData(data.uid, ref);
+                  if (_lastUid != data.uid || userModel == null) {
+                    _lastUid = data.uid;
+                    getData(data.uid, ref);
+                  }
                   if (userModel != null) {
                     return loggedInRoute;
                   }
+                } else {
+                  userModel = null;
+                  _lastUid = null;
                 }
                 return loggedOutRoute;
               }),

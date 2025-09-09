@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:garage/core/common/appbar_title.dart';
+import 'package:receipt_creator/core/common/appbar_title.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:routemaster/routemaster.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class ImageViewScreen extends StatelessWidget {
   final String imageUrl;

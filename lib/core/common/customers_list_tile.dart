@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:garage/theme/theme.dart';
-import 'package:garage/features/customers/screen/receipt_screen.dart';
-import 'package:garage/models/customer_info.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/theme/theme.dart';
+import 'package:receipt_creator/features/customers/screen/receipt_screen.dart';
+import 'package:receipt_creator/models/customer_info.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class CustomerTile extends ConsumerWidget {
   final CustomerInformation customer;

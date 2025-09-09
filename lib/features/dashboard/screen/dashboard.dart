@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/core/common/appbar_title.dart';
-import 'package:garage/core/common/bar_chart.dart';
-import 'package:garage/core/common/error_text.dart';
-import 'package:garage/core/common/loading.dart';
-import 'package:garage/features/auth/controller/auth_controller.dart';
-import 'package:garage/features/dashboard/controller/dashboard_controller.dart';
-import 'package:garage/theme/theme.dart';
+import 'package:receipt_creator/core/common/appbar_title.dart';
+import 'package:receipt_creator/core/common/bar_chart.dart';
+import 'package:receipt_creator/core/common/error_text.dart';
+import 'package:receipt_creator/core/common/loading.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/features/dashboard/controller/dashboard_controller.dart';
+import 'package:receipt_creator/theme/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:routemaster/routemaster.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 // ignore: must_be_immutable
 class DashboardScreen extends ConsumerWidget {

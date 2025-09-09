@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import 'package:garage/features/auth/repository/auth_repository.dart';
-import 'package:garage/models/user_model.dart';
-import 'package:garage/core/utils.dart';
+import 'package:receipt_creator/features/auth/repository/auth_repository.dart';
+import 'package:receipt_creator/models/user_model.dart';
+import 'package:receipt_creator/core/utils.dart';
 
 final userProvider = StateProvider<UserModel?>((ref) => null);
 

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/core/common/appbar_title.dart';
-import 'package:garage/core/common/customers_list_tile.dart';
-import 'package:garage/core/common/error_text.dart';
-import 'package:garage/core/common/loading.dart';
-import 'package:garage/features/customers/controller/customers_controller.dart';
-import 'package:garage/features/home/delegates/search_customer_delegate.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/core/common/appbar_title.dart';
+import 'package:receipt_creator/core/common/customers_list_tile.dart';
+import 'package:receipt_creator/core/common/error_text.dart';
+import 'package:receipt_creator/core/common/loading.dart';
+import 'package:receipt_creator/features/customers/controller/customers_controller.dart';
+import 'package:receipt_creator/features/home/delegates/search_customer_delegate.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class StatementPage extends ConsumerWidget {
   const StatementPage({super.key});

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:garage/core/common/appbar_title.dart';
-import 'package:garage/core/common/black_button.dart';
-import 'package:garage/core/common/text_fields/input_text_field.dart';
-import 'package:garage/core/utils.dart';
-import 'package:garage/features/customers/controller/customers_controller.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
+import 'package:receipt_creator/core/common/appbar_title.dart';
+import 'package:receipt_creator/core/common/black_button.dart';
+import 'package:receipt_creator/core/common/text_fields/input_text_field.dart';
+import 'package:receipt_creator/core/utils.dart';
+import 'package:receipt_creator/features/customers/controller/customers_controller.dart';
 import 'package:routemaster/routemaster.dart';
 import 'package:uuid/uuid.dart';
 

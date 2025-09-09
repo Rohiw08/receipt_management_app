@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/features/dashboard/screen/dashboard.dart';
-import 'package:garage/features/customers/screen/statement_screen.dart';
+import 'package:receipt_creator/features/dashboard/screen/dashboard.dart';
+import 'package:receipt_creator/features/customers/screen/statement_screen.dart';
 import 'package:routemaster/routemaster.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});

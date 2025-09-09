@@ -4,17 +4,17 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fpdart/fpdart.dart';
-import 'package:garage/core/common/error_text.dart';
-import 'package:garage/core/failure.dart';
-import 'package:garage/core/typedef.dart';
-import 'package:garage/core/utils.dart';
-import 'package:garage/features/auth/controller/auth_controller.dart';
-import 'package:garage/features/customers/repository/customers_repository.dart';
-import 'package:garage/models/customer_info.dart';
+import 'package:receipt_creator/core/common/error_text.dart';
+import 'package:receipt_creator/core/failure.dart';
+import 'package:receipt_creator/core/typedef.dart';
+import 'package:receipt_creator/core/utils.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/features/customers/repository/customers_repository.dart';
+import 'package:receipt_creator/models/customer_info.dart';
 import 'package:intl/intl.dart';
 import 'package:routemaster/routemaster.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 final searchValueProvider = StateProvider((ref) => "contactNumber");
 

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/core/common/black_button.dart';
-import 'package:garage/core/common/text_fields/auth_text_field.dart';
-import 'package:garage/core/common/text_fields/password_text_field.dart';
-import 'package:garage/core/constants/constants.dart';
-import 'package:garage/features/auth/controller/auth_controller.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/core/common/black_button.dart';
+import 'package:receipt_creator/core/common/text_fields/auth_text_field.dart';
+import 'package:receipt_creator/core/common/text_fields/password_text_field.dart';
+import 'package:receipt_creator/core/constants/constants.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class SignUpScreen extends ConsumerStatefulWidget {
   const SignUpScreen({super.key});
@@ -52,10 +52,11 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   height: 250,
                 ),
               ),
-               Text(
-                 AppLocalizations.of(context)!.register,
+              Text(
+                AppLocalizations.of(context)!.register,
                 // AppLocalizations.of(context)!.signUp,
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 25),
               MyTextField(
@@ -66,7 +67,8 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
               ),
               const SizedBox(height: 10),
               PasswordTextField(
-                controller: _passwordController, hintText: AppLocalizations.of(context)!.password,
+                controller: _passwordController,
+                hintText: AppLocalizations.of(context)!.password,
                 // AppLocalizations.of(context)!.password,
               ),
               const SizedBox(height: 10),

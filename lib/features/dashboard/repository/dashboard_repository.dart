@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/core/constants/firebase_constants.dart';
-import 'package:garage/core/provider/auth_provider.dart';
-import 'package:garage/features/auth/controller/auth_controller.dart';
-import 'package:garage/models/customer_info.dart';
+import 'package:receipt_creator/core/constants/firebase_constants.dart';
+import 'package:receipt_creator/core/provider/auth_provider.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/models/customer_info.dart';
 
 final dashboardRepositoryProvider = Provider((ref) {
   return DashboardRepository(

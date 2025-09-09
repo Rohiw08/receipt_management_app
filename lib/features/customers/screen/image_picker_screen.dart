@@ -2,17 +2,17 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fpdart/fpdart.dart';
-import 'package:garage/core/common/appbar_title.dart';
-import 'package:garage/core/common/black_button.dart';
-import 'package:garage/core/common/loading.dart';
-import 'package:garage/core/failure.dart';
-import 'package:garage/core/typedef.dart';
-import 'package:garage/core/utils.dart';
-import 'package:garage/features/auth/controller/auth_controller.dart';
-import 'package:garage/features/customers/controller/customers_controller.dart';
+import 'package:receipt_creator/core/common/appbar_title.dart';
+import 'package:receipt_creator/core/common/black_button.dart';
+import 'package:receipt_creator/core/common/loading.dart';
+import 'package:receipt_creator/core/failure.dart';
+import 'package:receipt_creator/core/typedef.dart';
+import 'package:receipt_creator/core/utils.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/features/customers/controller/customers_controller.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:routemaster/routemaster.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class ImagePickerScreen extends ConsumerStatefulWidget {
   final String uuid;

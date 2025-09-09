@@ -5,11 +5,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fpdart/fpdart.dart';
-import 'package:garage/core/constants/firebase_constants.dart';
-import 'package:garage/core/failure.dart';
-import 'package:garage/core/provider/auth_provider.dart';
-import 'package:garage/core/typedef.dart';
-import 'package:garage/models/customer_info.dart';
+import 'package:receipt_creator/core/constants/firebase_constants.dart';
+import 'package:receipt_creator/core/failure.dart';
+import 'package:receipt_creator/core/provider/auth_provider.dart';
+import 'package:receipt_creator/core/typedef.dart';
+import 'package:receipt_creator/models/customer_info.dart';
 
 final customerRepositoryProvider = Provider((ref) => CustomerRepository(
     firebaseFirestore: ref.read(firebaseFirestoreProvider),

@@ -1,14 +1,14 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/core/common/appbar_title.dart';
-import 'package:garage/core/common/black_button.dart';
-import 'package:garage/core/common/receipt_list_tile.dart';
-import 'package:garage/features/customers/controller/customers_controller.dart';
-import 'package:garage/features/customers/screen/view_image_screen.dart';
-import 'package:garage/models/customer_info.dart';
+import 'package:receipt_creator/core/common/appbar_title.dart';
+import 'package:receipt_creator/core/common/black_button.dart';
+import 'package:receipt_creator/core/common/receipt_list_tile.dart';
+import 'package:receipt_creator/features/customers/controller/customers_controller.dart';
+import 'package:receipt_creator/features/customers/screen/view_image_screen.dart';
+import 'package:receipt_creator/models/customer_info.dart';
 import 'package:routemaster/routemaster.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class ReceiptScreen extends ConsumerWidget {
   final CustomerInformation customer;

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:fl_chart/fl_chart.dart';
 
-import 'package:garage/theme/theme.dart';
+import 'package:receipt_creator/theme/theme.dart';
 
 class BChart extends StatefulWidget {
   const BChart(

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:garage/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
 
-import 'package:garage/core/common/black_button.dart';
-import 'package:garage/core/common/text_fields/auth_text_field.dart';
-import 'package:garage/core/constants/constants.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/core/common/black_button.dart';
+import 'package:receipt_creator/core/common/text_fields/auth_text_field.dart';
+import 'package:receipt_creator/core/constants/constants.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class PasswordResetScreen extends ConsumerStatefulWidget {
   const PasswordResetScreen({super.key});
@@ -68,8 +68,7 @@ class _PasswordResetScreenState extends ConsumerState<PasswordResetScreen> {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: MyButton(
-                    buttonText:
-                        AppLocalizations.of(context)!.sendEmail,
+                    buttonText: AppLocalizations.of(context)!.sendEmail,
                     onTap: () =>
                         sendPasswordResetEmail(email: _emailController.text),
                     isLoading: isLoading,

@@ -3,11 +3,11 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fpdart/fpdart.dart';
 
-import 'package:garage/core/constants/firebase_constants.dart';
-import 'package:garage/core/failure.dart';
-import 'package:garage/core/provider/auth_provider.dart';
-import 'package:garage/core/typedef.dart';
-import 'package:garage/models/user_model.dart';
+import 'package:receipt_creator/core/constants/firebase_constants.dart';
+import 'package:receipt_creator/core/failure.dart';
+import 'package:receipt_creator/core/provider/auth_provider.dart';
+import 'package:receipt_creator/core/typedef.dart';
+import 'package:receipt_creator/models/user_model.dart';
 
 final authRepositoryProvider = Provider(
   (ref) => AuthRepository(

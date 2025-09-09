@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/features/auth/controller/auth_controller.dart';
-import 'package:garage/features/dashboard/repository/dashboard_repository.dart';
-import 'package:garage/models/dashboard_data.dart';
+import 'package:receipt_creator/features/auth/controller/auth_controller.dart';
+import 'package:receipt_creator/features/dashboard/repository/dashboard_repository.dart';
+import 'package:receipt_creator/models/dashboard_data.dart';
 
 final dashboardControllerProvider = Provider((ref) => DashboardController(
       dashboardRepository: ref.watch(dashboardRepositoryProvider),

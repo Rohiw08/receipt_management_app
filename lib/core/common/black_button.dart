@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:garage/core/common/loading.dart';
+import 'package:receipt_creator/core/common/loading.dart';
 
 class MyButton extends StatefulWidget {
   final VoidCallback onTap;

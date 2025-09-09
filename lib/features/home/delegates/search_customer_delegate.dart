@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:garage/core/common/customers_list_tile.dart';
-import 'package:garage/core/common/error_text.dart';
-import 'package:garage/core/common/loading.dart';
-import 'package:garage/core/enums/enums.dart';
-import 'package:garage/features/customers/controller/customers_controller.dart';
+import 'package:receipt_creator/core/common/customers_list_tile.dart';
+import 'package:receipt_creator/core/common/error_text.dart';
+import 'package:receipt_creator/core/common/loading.dart';
+import 'package:receipt_creator/core/enums/enums.dart';
+import 'package:receipt_creator/features/customers/controller/customers_controller.dart';
 import 'package:routemaster/routemaster.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:receipt_creator/l10n/app_localizations.dart';
 
 class SearchCustomerDelegate extends SearchDelegate {
   final WidgetRef ref;
